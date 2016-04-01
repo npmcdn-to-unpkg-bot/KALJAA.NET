@@ -1,0 +1,15 @@
+{
+    "version": "1.0.0-*",
+    "compilationOptions": {
+        "emitEntryPoint": true,
+        "debugType": "portable"
+    },
+
+    "dependencies": {
+        "NETStandard.Library": "1.0.0-rc3-*"
+    },
+
+    "frameworks": {
+        "dnxcore50": { }
+    }
+}
