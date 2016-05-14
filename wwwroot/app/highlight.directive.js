@@ -8,19 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var HighlightDirective = (function () {
+    function HighlightDirective(el) {
+        this.el = el.nativeElement;
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: '<h1>My First A ngular 2 App</h1>'
+    HighlightDirective.prototype.onMouseEnter = function () { this.highlight("yellow"); };
+    HighlightDirective.prototype.onMouseLeave = function () { this.highlight(null); };
+    HighlightDirective.prototype.highlight = function (color) {
+        this.el.style.backgroundColor = color;
+    };
+    HighlightDirective = __decorate([
+        core_1.Directive({
+            selector: '[myHighlight]',
+            host: {
+                '(mouseenter)': 'onMouseEnter()',
+                '(mouseleave)': 'onMouseLeave()'
+            }
         }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+        __metadata('design:paramtypes', [core_1.ElementRef])
+    ], HighlightDirective);
+    return HighlightDirective;
 }());
-exports.AppComponent = AppComponent;
-platform_browser_dynamic_1.bootstrap(AppComponent);
+exports.HighlightDirective = HighlightDirective;

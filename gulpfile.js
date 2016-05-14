@@ -28,7 +28,7 @@ gulp.task('build:ts', function () {
     ])
     .pipe(gulpDebug({title: "(ts)"}))
     .pipe(ts(tsConfig.compilerOptions))
-    .pipe(gulp.dest('./wwwroot/'));
+    .pipe(gulp.dest('wwwroot/app'));
 });
 
 gulp.task('watch', () => {

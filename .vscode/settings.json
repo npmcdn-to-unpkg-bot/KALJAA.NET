@@ -5,7 +5,9 @@
         "**/node_modules": true,
         "**/bower_components": true,
         "**/packages": true,
-        "**/tmp": true
+        "**/tmp": true,
+        "wwwroot/app/**/*.js": true,
+        "wwwroot/app/**/*.map": true
     },
     "editor.folding": false,
     "files.autoSave": "afterDelay",
@@ -17,6 +19,8 @@
         "**/bower_components": true,
         "**/packages": true,
         "**/tmp": true,
-        "**/bin": true
+        "**/bin": true,
+        "wwwroot/app/**/*.js": true,
+        "wwwroot/app/**/*.map": true
 	}
 }
