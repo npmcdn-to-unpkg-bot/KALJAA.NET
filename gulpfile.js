@@ -6,7 +6,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var mainBowerFiles = require('main-bower-files');
 var gulpFilter = require('gulp-filter');
 var gulpDebug = require('gulp-debug');
-var gulpLess = require('gulp-less');
 var plumber = require('gulp-plumber');
 
 var path = require('path');

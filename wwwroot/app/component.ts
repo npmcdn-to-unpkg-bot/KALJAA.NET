@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { HighlightDirective } from './highLight.directive'
 
 @Component({
   selector: 'my-app',
-  directives:[HighlightDirective],
+  directives:[],
   template: `
-    <p [myHighlight]="color">My First Angular 2 App jeejee{{name}}</p>
+    <p>My First Angular 2 App jeejee{{name}}</p>
     <button (click)="updateMyName()">asd</button>`
 })
 export class AppComponent {
