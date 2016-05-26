@@ -1,44 +1,27 @@
-﻿
-using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNet.StaticFiles;
-using Microsoft.AspNet.FileProviders;
+using Microsoft.Extensions.FileProviders;
 
-namespace Carpax.Web
+public class Startup
 {
-    public class Startup
+    public Startup(IHostingEnvironment env)
     {
-        public Startup(IHostingEnvironment env)
-        {
-            _env = env;
-        }
-        
-        private IHostingEnvironment _env;
+        _env = env;
+    }
     
-        public void ConfigureServices(IServiceCollection services)
-        {
-            var configuration = new ConfigurationBuilder().AddEnvironmentVariables().Build();
-        }
+    private IHostingEnvironment _env;
 
-        public void Configure(IApplicationBuilder app, ILoggerFactory loggerfactory, IHostingEnvironment environment)
+    public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory, IHostingEnvironment environment)
+    {
+        app.UseDefaultFiles();
+        
+        app.UseStaticFiles(new StaticFileOptions
         {
-            loggerfactory.AddConsole();
-            
-            app.UseDefaultFiles();
-            
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(@"C:\github\KALJAA.NET\node_modules"),
-                RequestPath = "/node_modules", 
-            });
-            
-            app.UseStaticFiles();
-        }
-
-        public static void Main(string[] args) =>
-            WebApplication.Run<Startup>(args);
+            FileProvider = new PhysicalFileProvider(@"C:\github\KALJAA.NET\node_modules"),
+            RequestPath = "/node_modules", 
+        });
+        
+        app.UseStaticFiles();
     }
 }

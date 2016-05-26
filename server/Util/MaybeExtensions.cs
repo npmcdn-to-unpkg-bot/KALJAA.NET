@@ -25,7 +25,7 @@ namespace Carpax.Web.WebApi.Util
 
             if (items.Count() == 1)
                 return new Maybe<TOut>(items.Single());
-
+                
             return Maybe<TOut>.Empty();
         }
     }
