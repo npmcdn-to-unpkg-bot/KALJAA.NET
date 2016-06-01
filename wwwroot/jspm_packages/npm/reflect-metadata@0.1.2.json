@@ -1,0 +1,45 @@
+{
+  "main": "Reflect.js",
+  "map": {
+    "crypto": "@empty"
+  },
+  "format": "cjs",
+  "meta": {
+    "*.json": {
+      "format": "json"
+    },
+    "test/reflect/reflect-definemetadata.ts": {
+      "format": "esm"
+    },
+    "test/reflect/reflect-deletemetadata.ts": {
+      "format": "esm"
+    },
+    "test/reflect/reflect-getmetadata.ts": {
+      "format": "esm"
+    },
+    "test/reflect/reflect-getmetadatakeys.ts": {
+      "format": "esm"
+    },
+    "test/reflect/reflect-getownmetadata.ts": {
+      "format": "esm"
+    },
+    "test/reflect/reflect-getownmetadatakeys.ts": {
+      "format": "esm"
+    },
+    "test/reflect/reflect-hasmetadata.ts": {
+      "format": "esm"
+    },
+    "test/reflect/reflect-hasownmetadata.ts": {
+      "format": "esm"
+    },
+    "test/reflect/reflect-metadata.ts": {
+      "format": "esm"
+    },
+    "test/run.ts": {
+      "format": "esm"
+    },
+    "test/spec.ts": {
+      "format": "esm"
+    }
+  }
+}

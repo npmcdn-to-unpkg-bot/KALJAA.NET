@@ -8,32 +8,5 @@
             "url": "http://localhost:5000/",
             "webRoot": "${workspaceRoot}/wwwroot/",
             "sourceMaps": true
-        },
-        {
-            "name": "E2E-Debug",
-            "type": "node",
-            "request": "launch",
-            "program": "${workspaceRoot}\\node_modules\\protractor\\lib\\cli.js",
-            "stopOnEntry": false,
-            "args": [
-                "${workspaceRoot}\\protractor\\protractor.conf.js",
-                "--directConnect",
-                "--specs=${fileBasename}"
-            ],
-            "cwd": "${fileDirname}",
-            "runtimeExecutable": null,
-            "runtimeArgs": [],
-            "env": {},
-            "sourceMaps": true,
-            "outDir": null
-        },
-        {
-            "name": "PowerShell",
-            "type": "PowerShell",
-            "request": "launch",
-            "program": "${file}",
-            "args": [],
-            "cwd": "${file}"
-        }
-    ]
+    }]
 }

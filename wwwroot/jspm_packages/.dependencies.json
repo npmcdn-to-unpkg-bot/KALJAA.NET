@@ -1,0 +1,68 @@
+{
+  "github:frankwallis/plugin-typescript@4.0.16": {
+    "deps": {
+      "typescript": "npm:typescript@^1.8.7"
+    },
+    "peerDeps": {}
+  },
+  "npm:typescript@1.8.10": {
+    "deps": {},
+    "peerDeps": {
+      "os": "github:jspm/nodelibs-os@^0.2.0-alpha"
+    }
+  },
+  "github:jspm/nodelibs-os@0.2.0-alpha": {
+    "deps": {
+      "os-browserify": "npm:os-browserify@^0.2.0"
+    },
+    "peerDeps": {}
+  },
+  "npm:os-browserify@0.2.1": {
+    "deps": {},
+    "peerDeps": {
+      "os": "github:jspm/nodelibs-os@^0.2.0-alpha"
+    }
+  },
+  "npm:angular2@2.0.0-beta.17": {
+    "deps": {},
+    "peerDeps": {
+      "reflect-metadata": "npm:reflect-metadata@0.1.2",
+      "rxjs": "npm:rxjs@^5.0.0-beta.2",
+      "zone.js": "npm:zone.js@^0.6.6"
+    }
+  },
+  "npm:rxjs@5.0.0-beta.8": {
+    "deps": {
+      "symbol-observable": "npm:symbol-observable@^0.2.4"
+    },
+    "peerDeps": {}
+  },
+  "npm:zone.js@0.6.12": {
+    "deps": {},
+    "peerDeps": {
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha"
+    }
+  },
+  "npm:symbol-observable@0.2.4": {
+    "deps": {},
+    "peerDeps": {}
+  },
+  "npm:reflect-metadata@0.1.2": {
+    "deps": {},
+    "peerDeps": {
+      "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha"
+    }
+  },
+  "github:es-shims/es6-shim@0.35.1": {
+    "deps": {},
+    "peerDeps": {}
+  },
+  "github:jspm/nodelibs-assert@0.2.0-alpha": {
+    "deps": {},
+    "peerDeps": {}
+  },
+  "github:jspm/nodelibs-process@0.2.0-alpha": {
+    "deps": {},
+    "peerDeps": {}
+  }
+}

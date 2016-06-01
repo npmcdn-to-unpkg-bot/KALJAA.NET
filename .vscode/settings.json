@@ -7,7 +7,8 @@
         "**/packages": true,
         "**/tmp": true,
         "wwwroot/app/**/*.js": true,
-        "wwwroot/app/**/*.map": true
+        "wwwroot/app/**/*.map": true,
+        "obj/**": true
     },
     "editor.folding": false,
     "files.autoSave": "afterDelay",
